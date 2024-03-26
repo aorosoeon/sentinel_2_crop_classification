@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Data test" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="org.example.GeoJSONFilter" />
+  <configuration default="false" name="Test w/o include list" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="GeoJSONFilter" />
     <module name="ExtractTruthData" />
     <option name="PROGRAM_PARAMETERS" value="C:\Users\andre\IdeaProjects\MergeSatData\data\annual_crop_inventory_ground_truth_data_v1_2023.geojson &quot;{\&quot;xmin\&quot;: -64.693039, \&quot;ymin\&quot;: 45.894866, \&quot;xmax\&quot;: -61.969033, \&quot;ymax\&quot;: 46.999324}&quot; C:\Users\andre\IdeaProjects\MergeSatData\data\output.csv" />
     <method v="2">
