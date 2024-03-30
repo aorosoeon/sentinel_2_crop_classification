@@ -1,6 +1,9 @@
 # sentinel_2_crop_classification
 Crop classification for Canadian fields using satellite data from Sentinel-2
 
+## structuring_truth_data
+EDA for the crop types ground truth data from here: https://open.canada.ca/data/en/dataset/503a3113-e435-49f4-850c-d70056788632. Understanding its inconsistencies, handling missing values, plotting distributions, and plotting these data points on folium maps. The result is a cleaned geojson with crop type for each data point
+
 ## ExtractTruthData
 Java class to extract truth data located within a specified bouding box (xmin, ymin, xmax, ymax) from a file in geoJSON fomat and write to CSV
 
