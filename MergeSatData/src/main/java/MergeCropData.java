@@ -80,7 +80,7 @@ public class MergeCropData {
             while ((record = satCSVReader.readNext()) != null) {
                 lineNumber++;
                 if (lineNumber % 100 == 0) {
-                    System.out.print("\rProcessing satellite data record " + lineNumber);
+                    System.out.print("\rProcessing satellite data record " + lineNumber + " Matches: " + matchCount);
                     System.out.flush();
                 }
 

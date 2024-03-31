@@ -23,11 +23,18 @@ if not config.sh_client_id or not config.sh_client_secret:
 # longitude_max = -61.776823
 # latitude_max = 47.061006
 
+# PEI
+#longitude_min = -62.415
+#latitude_min = 46.27
+#longitude_max = -62.24
+#latitude_max = 46.44
 
-longitude_min = -62.415
-latitude_min = 46.27
-longitude_max = -62.24
-latitude_max = 46.44
+# SW Ontario
+#Bounding box for SW Ontario: http://bboxfinder.com/#42.803462,-81.589966,44.257003,-80.134277
+longitude_min = -81.589966
+latitude_min = 42.803462
+longitude_max = -80.134277
+latitude_max = 44.257003
 
 # Define time range for the satellite imagery - match it to the time range of the truth data
 time_interval = ('2023-08-01', '2023-08-31')
@@ -65,7 +72,7 @@ return viz.processList(val);
 chunk_long = longitude_min
 chunk_lat = latitude_min
 
-chunk_size = 0.01
+chunk_size = 0.07
 
 cumulative_df = pd.DataFrame()
 
