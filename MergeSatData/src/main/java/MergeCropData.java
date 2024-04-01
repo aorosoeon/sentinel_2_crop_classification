@@ -109,10 +109,19 @@ public class MergeCropData {
                                         String.valueOf(satLong),
                                         String.valueOf(Math.round(distance)),
                                         truthDescription,
-                                        record[2], // "B02", "B08", "B11"
+                                        record[2],
                                         record[3],
-                                        record[4]
-                                        // TODO: write all of the other features from the sat data
+                                        record[4],
+                                        record[5],
+                                        record[6],
+                                        record[7],
+                                        record[8],
+                                        record[9],
+                                        record[10],
+                                        record[11],
+                                        record[12],
+                                        record[13],
+                                        record[14]
                                 });
                     }
                 }

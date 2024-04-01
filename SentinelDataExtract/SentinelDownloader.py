@@ -40,7 +40,7 @@ latitude_max = 44.257003
 time_interval = ('2023-08-01', '2023-08-31')
 
 # Define the spectral bands to retrieve (e.g., red, green, blue, near-infrared)
-bands = ['B04', 'B03', 'B02', 'B08']  # Sentinel-2 bands for RGB and NIR
+bands = ['B01','B02','B03','B04','B05','B06','B07','B08','B8A','B09','B10','B11','B12']
 
 # define evalscript
 myEvalscript = """
@@ -52,13 +52,13 @@ let viz = new HighlightCompressVisualizer(minVal, maxVal);
 
 function setup() {
 return {
-    input: ["B04", "B03", "B02", "dataMask"],
-    output: { bands: 4 }
+    input: ["B01","B02","B03", "B04","B05", "B06", "B07", "B08","B8A","B09","B10","B11","B12"],
+    output: { bands: 13 }
 };
 }
 
 function evaluatePixel(samples) {
-let val = [samples.B04, samples.B03, samples.B02, samples.dataMask];
+let val = [samples.B01,samples.B02,samples.B03,samples.B04,samples.B05, samples.B06,samples.B07,samples.B08,samples.B8A,samples.B09,samples.B10,samples.B11, samples.B12];
 return viz.processList(val);
 }
 """
@@ -122,9 +122,19 @@ while chunk_long < longitude_max:
         chunk_df = pd.DataFrame({
             'Longitude': lons.flatten(),
             'Latitude': lats.flatten(),
-            'B04': data[:, :, 0].flatten(),
-            'B03': data[:, :, 1].flatten(),
-            'B02': data[:, :, 2].flatten()
+            'B01': data[:, :, 0].flatten(),
+            'B02': data[:, :, 1].flatten(),
+            'B03': data[:, :, 2].flatten(),
+            'B04': data[:, :, 3].flatten(),
+            'B05': data[:, :, 4].flatten(),
+            'B06': data[:, :, 5].flatten(),
+            'B07': data[:, :, 6].flatten(),
+            'B08': data[:, :, 7].flatten(),
+            'B8A': data[:, :, 8].flatten(),
+            'B09': data[:, :, 9].flatten(),
+            'B10': data[:, :, 10].flatten(),
+            'B11': data[:, :, 11].flatten(),
+            'B12': data[:, :, 12].flatten()
         })
 
         cumulative_df = pd.concat([cumulative_df, chunk_df], ignore_index=True)
@@ -141,5 +151,5 @@ while chunk_long < longitude_max:
 # This can take a few seconds if there are millions of rows
 
 print("Writing CSV file...")
-cumulative_df.to_csv('C:/Users/andre/IdeaProjects/SentinelDataExtract/data/sentinel2_rgb_values.csv', index=False)
+cumulative_df.to_csv('C:/Users/andre/IdeaProjects/SentinelDataExtract/data/sentinel2_rgb_values.csv.zip', index=False)
 print("Done!")
