@@ -66,7 +66,7 @@ public class MergeCropData {
                      CSVWriter.NO_ESCAPE_CHARACTER,
                      CSVWriter.DEFAULT_LINE_END)) {
 
-            csvWriter.writeNext(new String[]{"Latitude", "Longitude", "CropType","B02", "B08", "B11"});
+            csvWriter.writeNext(new String[]{"Latitude", "Longitude", "Distance", "CropType","B01","B02","B03", "B04","B05", "B06", "B07", "B08","B8A","B09","B10","B11","B12"});
 
             String[] record;
             int lineNumber = 0;
