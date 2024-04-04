@@ -1,0 +1,14 @@
+﻿{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Console",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "C:\\GitHub-SourceCode\\Meta\\MetaMocks\\bin\\Debug\\net8.0\\MetaMocks.dll",
+            "args": [ "filteredTruthData.csv", "sentinel2_rgb_values.csv", "NewMergedData.csv", "100" ],
+            "cwd": "C:\\GitHub-SourceCode\\Meta\\MetaMocks\\bin\\Debug\\net8.0"
+        }
+    ]
+}
