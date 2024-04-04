@@ -16,6 +16,8 @@ C:\Users\andre\IdeaProjects\MergeSatData\data\annual_crop_inventory_ground_truth
 
 ## SentinelDataExtract
 Python file to extract data from SentinelHub
+Due to data request volume limitations, make requests in chunks
+Retrieve 13 optical (visual and near-infra-read) bands
 
 ## MergeSatData
 Java class to merge Sentinel data and truth data to create CSV file suitable for ML models 
