@@ -24,7 +24,6 @@ Java class to merge Sentinel data and truth data to create CSV file suitable for
 
 Usage: java mergeCropData \<truthDataCSV\> \<satelliteDataCSV\> \<outputCSV\> \<minDistance\>
 
-TODO: add more output columns, after SentinelDataExtract is modified
 
 ## Truth data from Agriculture Canada is here:
 https://github.com/aorosoeon/sentinel_2_crop_classification/tree/main/MergeSatData/data/annual_crop_inventory_ground_truth_data_v1_2023.geojson
