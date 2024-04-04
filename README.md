@@ -28,3 +28,8 @@ TODO: add more output columns, after SentinelDataExtract is modified
 https://github.com/aorosoeon/sentinel_2_crop_classification/tree/main/MergeSatData/data/annual_crop_inventory_ground_truth_data_v1_2023.geojson
 
 Source: https://open.canada.ca/data/en/dataset/503a3113-e435-49f4-850c-d70056788632
+
+## Prince Edward Island - bounding box splitter
+
+PrinceEdwardIsland-SentialDataExtract\large_area_utilities.ipynb, illustrates various ways of obtaining bounding boxes from polygons, e.g. Prince Edward Island.
+These bounding can further be used to obtain sential data.
