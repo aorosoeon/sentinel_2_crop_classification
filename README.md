@@ -34,3 +34,6 @@ Source: https://open.canada.ca/data/en/dataset/503a3113-e435-49f4-850c-d70056788
 
 PrinceEdwardIsland-SentialDataExtract\large_area_utilities.ipynb, illustrates various ways of obtaining bounding boxes from polygons, e.g. Prince Edward Island.
 These bounding can further be used to obtain sential data.
+
+## CropClassficationPycaret
+Jupyter notebook which reads the data from the final dataset and performs machine learning with the pycare library. 
